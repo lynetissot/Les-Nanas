@@ -1,15 +1,18 @@
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Style général du body */
 body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f9f9f9;
 }
 
+/* Header */
 header {
     background-color: #5c7b4a;
     padding: 20px;
@@ -17,6 +20,7 @@ header {
     align-items: center;
 }
 
+/* Contenu du header */
 .header-content {
     display: flex;
     align-items: center;
@@ -24,12 +28,14 @@ header {
     width: 100%;
 }
 
+/* Image du profil dans le header */
 .profile-image {
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -41,40 +47,46 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Contenu principal */
 .main-content {
-    max-width: 800px;
+    max-width: 1500px;  /* Largeur max pour le desktop */
     margin: 40px auto;
     text-align: center;
 }
 
+/* Titre principal */
 .main-content h1 {
     font-size: 48px;
     color: #5c7b4a;
     margin-bottom: 20px;
 }
 
+/* Image principale */
 .nanas-image {
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
 }
 
+/* Section textuelle */
 .text-content {
     background-color: #f0e7e1;
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
     text-align: left;
-    width: 100%
-    height: auto; /
+    width: 100%;
+    height: auto;
 }
 
+/* Sous-titre dans la section textuelle */
 .text-content h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
+/* Paragraphe dans la section textuelle */
 .text-content p {
     font-size: 16px;
     line-height: 1.6;
