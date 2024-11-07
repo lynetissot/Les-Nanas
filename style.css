@@ -76,6 +76,7 @@ nav ul li a {
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
+    border: 2px solid black; /* Bordure noire de 2px */
 }
 
 /* Section textuelle */
