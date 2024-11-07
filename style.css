@@ -93,7 +93,7 @@ nav ul li a {
 /* Sous-titre dans la section textuelle */
 .text-content h2 {
     font-size: 24px;
-    color: #333;
+    color: #000000;
     margin-bottom: 10px;
 }
 
@@ -101,5 +101,5 @@ nav ul li a {
 .text-content p {
     font-size: 16px;
     line-height: 1.6;
-    color: #666;
+    color: #000000;
 }
