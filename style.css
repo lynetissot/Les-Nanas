@@ -66,8 +66,9 @@ nav ul li a {
     font-size: 48px;
     color: #5c7b4a;
     margin-bottom: 20px;
+    font-weight: normal;  /* Enlève le gras */
+    margin-right: 1000px; 
 }
-
 /* Image principale */
 .nanas-image {
     width: 100%;
