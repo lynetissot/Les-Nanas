@@ -18,7 +18,7 @@ header {
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centre le contenu du header */
+    padding-left: 50px; /* Décale légèrement le contenu vers la gauche */
 }
 
 /* Contenu du header */
@@ -26,7 +26,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    justify-content: center; /* Centre le contenu */
     width: 100%;
 }
 
@@ -39,7 +38,7 @@ header {
 
 nav {
     display: flex;
-    justify-content: center; /* Centre les éléments de navigation */
+    justify-content: flex-start; /* Aligne le menu de navigation à gauche */
     width: 100%;
 }
 
@@ -47,7 +46,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 40px; /* Augmente l'espacement entre les liens */
 }
 
 nav ul li a {
@@ -94,7 +93,7 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-/* Paragraphe dans la section textuelle */a
+/* Paragraphe dans la section textuelle */
 .text-content p {
     font-size: 16px;
     line-height: 1.6;
