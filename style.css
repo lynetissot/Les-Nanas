@@ -51,7 +51,7 @@ nav ul li a {
 .main-content {
     max-width: 1500px;  /* Largeur max pour le desktop */
     margin: 40px auto;
-    text-align: center;
+    text-align: left;
 }
 
 /* Titre principal */
