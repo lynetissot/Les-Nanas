@@ -31,9 +31,11 @@ header {
 
 /* Image du profil dans le header */
 .profile-image {
-    width: 50px;
-    height: 50px;
+    width: 180px; /* Augmente la taille pour plus de lisibilité */
+    height: 70px; /* Ajuste la hauteur pour garder l'aspect rond */
     border-radius: 50%;
+    object-fit: cover; /* Évite l'écrasement de l'image */
+    margin-right: 30px; /* Espace entre l'image et le texte si nécessaire */
 }
 
 nav {
