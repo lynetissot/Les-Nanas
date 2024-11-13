@@ -152,10 +152,10 @@ nav ul li a {
     gap: 20px;
 }
 
+ /* photos galerie */
 .gallery img {
     width: 200px;
     height: auto;
-    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -185,10 +185,9 @@ nav ul li a {
 .contact-info ul li {
     margin-bottom: 5px;
 }
-
+ /* photo map nice */
 .contact-map img {
     width: 200px;
     height: auto;
-    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
