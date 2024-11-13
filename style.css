@@ -178,8 +178,8 @@ nav ul li a {
 }
 
 .contact-info ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc; /* Définit le style de puce en cercle noir */
+    padding-left: 20px; /* Indentation pour que les puces soient visibles */
 }
 
 .contact-info ul li {
