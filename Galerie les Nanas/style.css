@@ -1,0 +1,107 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général du body */
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #4F7335;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; /* Décale légèrement le contenu vers la gauche */
+}
+
+/* Contenu du header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Image du profil dans le header */
+.profile-image {
+    width: 180px; /* Augmente la taille pour plus de lisibilité */
+    height: 70px; /* Ajuste la hauteur pour garder l'aspect rond */
+    border-radius: 50%;
+    object-fit: cover; /* Évite l'écrasement de l'image */
+    margin-right: 30px; /* Espace entre l'image et le texte si nécessaire */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Aligne le menu de navigation à gauche */
+    width: 100%;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Augmente l'espacement entre les liens */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Contenu principal */
+.main-content {
+    max-width: 1500px;  /* Largeur max pour le desktop */
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Titre principal */
+.main-content h1 {
+    font-size: 48px;
+    color: #4F7335;
+    margin-bottom: 20px;
+    font-weight: normal;  /* Enlève le gras */
+    margin-right: 1000px; 
+}
+/* Image principale */
+.nanas-image {
+    width: 100%;
+    max-width: 460px;
+    height: 660;
+    border-radius: 0px;
+    border: 2px solid black; /* Bordure noire de 2px */
+    margin-left: 450px; /* Décale l'image de 20px vers la droite */
+}
+
+/* Section textuelle */
+.text-content {
+    background-color: #F1E7E7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+
+/* Sous-titre dans la section textuelle */
+.text-content h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Paragraphe dans la section textuelle */
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
