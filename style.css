@@ -106,7 +106,7 @@ nav ul li a {
     color: #000000;
 }
 .section-green {
-    background-color: #4b7249; /* Couleur verte de fond */
+    background-color: #4F7335; /* Couleur verte de fond */
     padding: 20px;
 }
 
@@ -143,7 +143,7 @@ nav ul li a {
 .gallery-section h2 {
     font-size: 24px;
     font-weight: normal; 
-    color: #4b7249; /* Couleur verte pour le titre */
+    color: #4F7335; /* Couleur verte pour le titre */
     margin-bottom: 20px;
 }
 
@@ -170,7 +170,7 @@ nav ul li a {
 }
 
 .contact-info {
-    color: #4b7249; /* Couleur verte pour le texte de contact */
+    color: #4F7335; /* Couleur verte pour le texte de contact */
 }
 
 .contact-info h3 {
