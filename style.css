@@ -181,11 +181,14 @@ nav ul li a {
 .contact-info h3 {
     margin-top: 0;
     font-size: 20px;
+    font-weight: normal;
 }
 
-.contact-info ul {
+.contact-info h4 ul {
     list-style-type: disc; /* Définit le style de puce en cercle noir */
     padding-left: 20px; /* Indentation pour que les puces soient visibles */
+    color: #000000;
+    font-weight: normal;
 }
 
 .contact-info ul li {
