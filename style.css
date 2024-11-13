@@ -149,15 +149,16 @@ nav ul li a {
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 60px; /* Espace entre les images, ici 30px */
 }
 
  /* photos galerie photo */
 .gallery img {
-    width: 200px;
+    width: 250px;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease; /* Transition pour un effet de douceur */
+    margin: 20px; /* Ajoute un peu d'espace autour de chaque image */
 }
 
 .gallery img:hover {
