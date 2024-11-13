@@ -53,9 +53,14 @@ nav ul {
 
 nav ul li a {
     color: white;
-    text-decoration: none;
+    transition: transform 0.3s ease; /* Transition pour un effet de douceur */
 }
-
+/* Effet de grossissement au survol */
+nav ul li a:hover {
+    transform: scale(1.); /* Grossit le texte de 10% */
+    color: #902063; /* Change la couleur du texte au survol (facultatif) */
+    text-decoration: underline; /* Ajoute le soulignement */
+}
 /* Contenu principal */
 .main-content {
     max-width: 1500px;  /* Largeur max pour le desktop */
@@ -69,6 +74,8 @@ nav ul li a {
     color: #4F7335;
     margin-bottom: 20px;
     font-weight: normal;  /* Enlève le gras */
+    margin-top: 20px; /* Descend le titre */
+    margin-left: 50px; /* Le pousse vers la droite */
     margin-right: 1000px; 
 }
 /* Image principale */
