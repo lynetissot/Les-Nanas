@@ -123,8 +123,8 @@ nav ul li a {
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
+   width: 350px;
+    height: 560px;
     border-radius: 5px;
 }
 
