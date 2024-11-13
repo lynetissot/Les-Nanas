@@ -207,5 +207,5 @@ nav ul li a:hover {
     width: 300px; /* Augmente légèrement la taille de l'image */
     height: 230px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: -60px; /* Déplace l'image vers la gauche */
+    margin-left: -500px; /* Déplace l'image vers la gauche */
 }
