@@ -142,6 +142,7 @@ nav ul li a {
 
 .gallery-section h2 {
     font-size: 24px;
+    font-weight: normal; 
     color: #4b7249; /* Couleur verte pour le titre */
     margin-bottom: 20px;
 }
