@@ -184,11 +184,13 @@ nav ul li a:hover {
 
 .contact-info {
     color: #4F7335; /* Couleur verte pour le texte de contact */
+    padding-left: 40px; /* Décale le contenu vers la droite */
 }
 
 .contact-info h3 {
     margin-top: 0;
     font-size: 20px;
+    margin-bottom: 20px; /* Ajoute un espace sous le titre */
     font-weight: normal;
 }
 
