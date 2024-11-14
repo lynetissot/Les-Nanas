@@ -58,7 +58,7 @@ nav ul li a {
 /* Effet de grossissement au survol */
 nav ul li a:hover {
     transform: scale(1.); /* Grossit le texte de 10% */
-    color: #902063; /* Change la couleur du texte au survol (facultatif) */
+    color: #000000; /* Change la couleur du texte au survol (facultatif) */
     text-decoration: underline; /* Ajoute le soulignement */
 }
 /* Contenu principal */
@@ -177,7 +177,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f3e9e7; /* Couleur rose pâle */
+    background-color: #F1E7E7; /* Couleur rose pâle */
     padding: 20px;
     margin-top: 40px;
 }
