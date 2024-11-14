@@ -138,6 +138,7 @@ nav ul li a:hover {
     flex: 2;
     color: white;
     font-family: Arial, sans-serif;
+    text-align: justify;
     font-size: 16px;
     line-height: 1.6;
 }
