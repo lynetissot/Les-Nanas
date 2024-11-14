@@ -133,7 +133,14 @@ nav ul li a:hover {
    width: 350px;
     height: 560px;
 }
-
+.intro-container {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center; /* Centrage du texte */
+    font-weight: bold; /* Optionnel : Texte en gras pour différencier */
+    font-size: 14px;
+    color: #ffffff; /* Optionnel : Couleur du texte */
+}
 .text-container {
     flex: 2;
     color: white;
