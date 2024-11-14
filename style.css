@@ -4,7 +4,36 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Styles par défaut pour les écrans larges (ordinateurs) */
+.content {
+    display: flex;
+    flex-direction: row;
+}
 
+/* Styles pour les tablettes */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Les éléments s'empilent en colonne sur tablette */
+    }
+    .text-container {
+        font-size: 1em; /* Ajuste la taille de police */
+    }
+}
+
+/* Styles pour les téléphones mobiles */
+@media (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 100%; /* L'image prend toute la largeur de l'écran */
+        height: auto;
+    }
+    .text-container {
+        padding: 10px; /* Réduit les marges */
+        font-size: 0.9em; /* Taille de police plus petite */
+    }
+}
 /* Style général du body */
 body {
     font-family: Arial, sans-serif;
