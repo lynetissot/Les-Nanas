@@ -224,6 +224,7 @@ nav ul li a:hover {
 }
 
 .contact-info h3 {
+    color: #000000; /* Définit la couleur du titre "Nous contacter" en noir */
     margin-top: 0;
     font-size: 20px;
     margin-bottom: 20px; /* Ajoute un espace sous le titre */
