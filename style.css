@@ -250,3 +250,59 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-left: -500px; /* Déplace l'image vers la gauche */
 }
+
+
+.background-contact-form {
+background-color: #F1E7E7;
+
+}
+/* Box contact */
+.contact-form {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+
+}
+
+.contact-form h5 {
+    color: #070741;
+    margin-bottom: 20px;
+
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color:#4F7335;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #06401c;
+}
+
+.contact-form button svg {
+    margin-right: 5px;
+}
