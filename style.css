@@ -1,3 +1,314 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Styles par défaut pour les écrans larges (ordinateurs) */
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Styles pour les tablettes */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Les éléments s'empilent en colonne sur tablette */
+    }
+    .text-container {
+        font-size: 1em; /* Ajuste la taille de police */
+    }
+}
+
+/* Styles pour les téléphones mobiles */
+@media (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 100%; /* L'image prend toute la largeur de l'écran */
+        height: auto;
+    }
+    .text-container {
+        padding: 10px; /* Réduit les marges */
+        font-size: 0.9em; /* Taille de police plus petite */
+    }
+}
+/* Style général du body */
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background-color: #4F7335;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px; /* Décale légèrement le contenu vers la gauche */
+}
+
+/* Contenu du header */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Image du profil dans le header */
+.profile-image {
+    width: 180px; /* Augmente la taille pour plus de lisibilité */
+    height: 70px; /* Ajuste la hauteur pour garder l'aspect rond */
+    border-radius: 50%;
+    object-fit: cover; /* Évite l'écrasement de l'image */
+    margin-right: 30px; /* Espace entre l'image et le texte si nécessaire */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Aligne le menu de navigation à gauche */
+    width: 100%;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Augmente l'espacement entre les liens */
+}
+
+nav ul li a {
+    color: white;
+    transition: transform 0.3s ease; /* Transition pour un effet de douceur */
+}
+/* Effet de grossissement au survol */
+nav ul li a:hover {
+    transform: scale(1.); /* Grossit le texte de 10% */
+    color: #000000; /* Change la couleur du texte au survol (facultatif) */
+    text-decoration: underline; /* Ajoute le soulignement */
+}
+/* Contenu principal */
+.main-content {
+    max-width: 1500px;  /* Largeur max pour le desktop */
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Titre principal */
+.main-content h1 {
+    font-size: 48px;
+    color: #4F7335;
+    margin-bottom: 20px;
+    font-weight: normal;  /* Enlève le gras */
+    margin-top: 20px; /* Descend le titre */
+    margin-left: 50px; /* Le pousse vers la droite */
+    margin-right: 1000px; 
+}
+/* Image principale */
+.nanas-image {
+    width: 100%;
+    max-width: 460px;
+    height: 660;
+    border-radius: 0px;
+    border: 2px solid black; /* Bordure noire de 2px */
+    margin-left: 450px; /* Décale l'image de 20px vers la droite */
+}
+
+/* Section textuelle */
+.text-content {
+    background-color: #F1E7E7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+    height: auto;
+}
+
+/* Sous-titre dans la section textuelle */
+.text-content h2 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* Paragraphe dans la section textuelle */
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
+.section-green {
+    background-color: #4F7335; /* Couleur verte de fond */
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+/* photo monsieur */
+.image-container img {
+   width: 350px;
+    height: 560px;
+}
+.intro-container {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center; /* Centrage du texte */
+    font-weight: bold; /* Optionnel : Texte en gras pour différencier */
+    font-size: 14px;
+    color: #ffffff; /* Optionnel : Couleur du texte */
+}
+.text-container {
+    flex: 2;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.gallery-section {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.gallery-section h2 {
+    font-size: 24px;
+    font-weight: normal; 
+    color: #4F7335; /* Couleur verte pour le titre */
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* Espace entre les images, ici 30px */
+}
+
+ /* photos galerie photo */
+.gallery img {
+    width: 250px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transition pour un effet de douceur */
+    margin: 20px; /* Ajoute un peu d'espace autour de chaque image */
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Grossit l'image de 10% lorsqu'on survole */
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F1E7E7; /* Couleur rose pâle */
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.contact-info {
+    color: #4F7335; /* Couleur verte pour le texte de contact */
+    padding-left: 40px; /* Décale le contenu vers la droite */
+    margin-left: 300px;
+}
+
+.contact-info h3 {
+    color: #4F7335; /* Définit la couleur du titre "Nous contacter" en noir */
+    margin-top: 0;
+    font-size: 34px;
+    margin-bottom: 20px; /* Ajoute un espace sous le titre */
+    font-weight: normal;
+
+}
+
+.contact-info h4 ul {
+    list-style-type: disc; /* Définit le style de puce en cercle noir */
+    padding-left: 20px; /* Indentation pour que les puces soient visibles */
+    color: #000000;
+    font-weight: normal;
+}
+
+.contact-info ul li {
+    margin-bottom: 5px;
+    color: #000000; /* Change la couleur du texte en noir */
+}
+
+ /* photo map nice */
+ .contact-map img {
+    width: 300px; /* Augmente légèrement la taille de l'image */
+    height: 230px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: -500px; /* Déplace l'image vers la gauche */
+}
+
+
+.background-contact-form {
+background-color: #ffffff;
+
+}
+/* Box contact */
+.contact-form {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+
+}
+
+.contact-form h5 {
+    color: #070741;
+    margin-bottom: 20px;
+
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color:#4F7335;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #06401c;
+}
+
+.contact-form button svg {
+    margin-right: 5px;
+}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
