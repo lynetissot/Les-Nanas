@@ -74,14 +74,19 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Section textuelle */
 .text-content {
-    background-color: #F1E7E7;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    margin-top: 2rem;
-    text-align: left;
-    font-size: 1rem;
+    background-color: #F1E7E7; 
+    width: 100vw;  
+    margin-left: 0;  
+    margin-right: 0; 
+    padding: 1.5rem;  
+    text-align: left;  
+    font-size: 1rem;  
+    box-sizing: border-box; 
+    position: relative;  
+    left: 50%;  
+    right: 50%;  
+    transform: translateX(-50%);  /* Recentre l'élément après décalage */
 }
 
 .text-content h2 {
