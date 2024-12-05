@@ -241,3 +241,89 @@ nav ul li a:hover {
 .contact-form button:hover {
     background-color: #06401c;
 }
+
+/* Styles pour petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 0 1rem 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .main-content {
+        font-size: 0.9rem;
+    }
+
+    .text-content {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+
+    .section-green .content {
+        flex-direction: column;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info ul {
+        padding-left: 1rem;
+    }
+
+    .contact-map img {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
+
+/* Styles pour écrans moyens (481px à 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-content {
+        max-width: 95%;
+        margin: 1.5rem auto;
+    }
+
+    .section-green .content {
+        gap: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+        max-width: 350px;
+    }
+}
