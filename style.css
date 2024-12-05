@@ -12,33 +12,41 @@ body {
     background-color: #f9f9f9;
     line-height: 1.6;
     font-size: 16px;
+    padding-top: 80px; /* Correspond à la hauteur du header */
 }
 
 /* Header */
 header {
     background-color: #4F7335;
-    padding: 1.25rem;
+    padding: 10px 20px; /* Plus d'espace à gauche et à droite */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    position: fixed; /* Rend le header fixe */
+    top: 0;
+    width: 100%; /* S'étend sur toute la largeur */
+    z-index: 10; /* Assure que la bannière reste au-dessus des autres éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile */
 }
 
 /* Image de profil dans le header */
 .profile-image {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 1rem;
+    width: 80px; /* Ajuste la taille de l'image pour qu'elle ne prenne pas trop de place */
+    height: 80px; /* Rendre l'image carrée avec une hauteur égale à la largeur */
+    border-radius: 50%; /* Garde l'image ronde */
+    object-fit: cover; /* Maintient le rapport de l'image */
+    margin-right: 20px; /* Espace entre l'image et les éléments suivants */
 }
 
 /* Navigation */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5rem; /* Espace entre les liens */
+    margin: 0; /* Supprime le margin par défaut */
+    padding: 0; /* Supprime le padding par défaut */
 }
 
+/* Liens de navigation */
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -46,12 +54,18 @@ nav ul li a {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Effet de survol pour les liens */
 nav ul li a:hover {
     color: #000000;
     text-decoration: underline;
     transform: scale(1.1);
 }
 
+/* Titre principal */
+.title {
+    margin-top: 100px; /* Ajusté pour descendre encore plus le titre */
+    text-align: center; /* Centrer le texte si nécessaire */
+}
 /* Section principale */
 .main-content {
     max-width: 90%;
