@@ -60,12 +60,16 @@ nav ul li a:hover {
     text-decoration: underline;
     transform: scale(1.1);
 }
+.empty-space {
+    height: 50px;  /* Crée un espace de 50px */
+}
 
 /* Titre principal */
 .title {
     margin-top: 100px; /* Ajusté pour descendre encore plus le titre */
     text-align: center; /* Centrer le texte si nécessaire */
 }
+
 /* Section principale */
 .main-content {
     max-width: 90%;
