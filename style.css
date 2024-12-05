@@ -4,286 +4,222 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Styles par défaut pour les écrans larges (ordinateurs) */
-.content {
-    display: flex;
-    flex-direction: row;
-}
 
-/* Styles pour les tablettes */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column; /* Les éléments s'empilent en colonne sur tablette */
-    }
-    .text-container {
-        font-size: 1em; /* Ajuste la taille de police */
-    }
-}
-
-/* Styles pour les téléphones mobiles */
-@media (max-width: 480px) {
-    .content {
-        flex-direction: column;
-    }
-    .image-container img {
-        width: 100%; /* L'image prend toute la largeur de l'écran */
-        height: auto;
-    }
-    .text-container {
-        padding: 10px; /* Réduit les marges */
-        font-size: 0.9em; /* Taille de police plus petite */
-    }
-}
-/* Style général du body */
+/* Style général */
 body {
     font-family: Arial, sans-serif;
     color: #000000;
     background-color: #f9f9f9;
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 /* Header */
 header {
     background-color: #4F7335;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    padding-left: 50px; /* Décale légèrement le contenu vers la gauche */
-}
-
-/* Contenu du header */
-.header-content {
+    padding: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
 }
 
-/* Image du profil dans le header */
+/* Image de profil dans le header */
 .profile-image {
-    width: 180px; /* Augmente la taille pour plus de lisibilité */
-    height: 70px; /* Ajuste la hauteur pour garder l'aspect rond */
+    width: 7rem;
+    height: 7rem;
     border-radius: 50%;
-    object-fit: cover; /* Évite l'écrasement de l'image */
-    margin-right: 30px; /* Espace entre l'image et le texte si nécessaire */
-}
-
-nav {
-    display: flex;
-    justify-content: flex-start; /* Aligne le menu de navigation à gauche */
-    width: 100%;
+    object-fit: cover;
+    margin-right: 1rem;
 }
 
 /* Navigation */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 40px; /* Augmente l'espacement entre les liens */
+    gap: 1.5rem;
 }
 
 nav ul li a {
     color: white;
-    transition: transform 0.3s ease; /* Transition pour un effet de douceur */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-/* Effet de grossissement au survol */
+
 nav ul li a:hover {
-    transform: scale(1.); /* Grossit le texte de 10% */
-    color: #000000; /* Change la couleur du texte au survol (facultatif) */
-    text-decoration: underline; /* Ajoute le soulignement */
+    color: #000000;
+    text-decoration: underline;
+    transform: scale(1.1);
 }
-/* Contenu principal */
+
+/* Section principale */
 .main-content {
-    max-width: 1500px;  /* Largeur max pour le desktop */
-    margin: 40px auto;
+    max-width: 90%;
+    margin: 2rem auto;
     text-align: center;
 }
 
-/* Titre principal */
 .main-content h1 {
-    font-size: 48px;
+    font-size: clamp(2rem, 5vw, 3rem);
     color: #4F7335;
-    margin-bottom: 20px;
-    font-weight: normal;  /* Enlève le gras */
-    margin-top: 20px; /* Descend le titre */
-    margin-left: 50px; /* Le pousse vers la droite */
-    margin-right: 1000px; 
+    margin-bottom: 1rem;
 }
-/* Image principale */
+
 .nanas-image {
     width: 100%;
     max-width: 460px;
-    height: 660 auto;
-    border-radius: 0px;
-    border: 2px solid black; /* Bordure noire de 2px */
-    margin-left: 450px; /* Décale l'image de 20px vers la droite */
+    height: auto;
+    border: 2px solid black;
+    margin: 1.5rem auto;
+    display: block;
 }
 
 /* Section textuelle */
 .text-content {
     background-color: #F1E7E7;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
     text-align: left;
-    width: 100%;
-    height: auto;
+    font-size: 1rem;
 }
 
-/* Sous-titre dans la section textuelle */
 .text-content h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #000000;
-    margin-bottom: 10px;
+    margin-bottom: 0.75rem;
 }
 
-/* Paragraphe dans la section textuelle */
 .text-content p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 1rem;
     color: #000000;
 }
+
+/* Section verte */
 .section-green {
-    background-color: #4F7335; /* Couleur verte de fond */
-    padding: 20px;
+    background-color: #4F7335;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #ffffff;
 }
 
-.content {
+.section-green .content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 2rem;
     max-width: 800px;
     margin: 0 auto;
 }
 
 .image-container {
-    flex: 1;
-    padding-right: 20px;
+    flex: 1 1 300px;
+    text-align: center;
 }
-/* photo monsieur */
+
 .image-container img {
-   width: 350px;
-    height: 560px;
-}
-.intro-container {
     width: 100%;
-    margin-bottom: 30px;
-    text-align: center; /* Centrage du texte */
-    font-weight: bold; /* Optionnel : Texte en gras pour différencier */
-    font-size: 14px;
-    color: #ffffff; /* Optionnel : Couleur du texte */
+    max-width: 350px;
+    height: auto;
 }
+
 .text-container {
     flex: 2;
-    color: white;
-    font-family: Arial, sans-serif;
+    font-size: 1rem;
     text-align: justify;
-    font-size: 16px;
-    line-height: 1.6;
+    color: #ffffff;
 }
+
+/* Galerie */
 .gallery-section {
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin: 3rem auto;
 }
 
 .gallery-section h2 {
-    font-size: 24px;
-    font-weight: normal; 
-    color: #4F7335; /* Couleur verte pour le titre */
-    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #4F7335;
+    margin-bottom: 1rem;
 }
 
 .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 60px; /* Espace entre les images, ici 30px */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
 }
 
- /* photos galerie photo */
 .gallery img {
-    width: 250px;
+    width: 100%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease; /* Transition pour un effet de douceur */
-    margin: 20px; /* Ajoute un peu d'espace autour de chaque image */
+    transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
-    transform: scale(1.1); /* Grossit l'image de 10% lorsqu'on survole */
+    transform: scale(1.1);
 }
 
+/* Section contact */
 .contact-section {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     align-items: center;
     justify-content: space-between;
-    background-color: #F1E7E7; /* Couleur rose pâle */
-    padding: 20px;
-    margin-top: 40px;
+    background-color: #F1E7E7;
+    padding: 2rem;
 }
 
 .contact-info {
-    color: #4F7335; /* Couleur verte pour le texte de contact */
-    padding-left: 40px; /* Décale le contenu vers la droite */
-    margin-left: 300px;
+    flex: 1 1 300px;
+    color: #4F7335;
+    font-size: 1rem;
 }
 
 .contact-info h3 {
-    color: #4F7335; /* Définit la couleur du titre "Nous contacter" en noir */
-    margin-top: 0;
-    font-size: 34px;
-    margin-bottom: 20px; /* Ajoute un espace sous le titre */
-    font-weight: normal;
-
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
 }
 
-.contact-info h4 ul {
-    list-style-type: disc; /* Définit le style de puce en cercle noir */
-    padding-left: 20px; /* Indentation pour que les puces soient visibles */
+.contact-info ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
     color: #000000;
-    font-weight: normal;
 }
 
-.contact-info ul li {
-    margin-bottom: 5px;
-    color: #000000; /* Change la couleur du texte en noir */
-}
-
- /* photo map nice */
- .contact-map img {
-    width: 300px; /* Augmente légèrement la taille de l'image */
-    height: 230px;
+.contact-map img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: -500px; /* Déplace l'image vers la gauche */
 }
 
-
-.background-contact-form {
-background-color: #ffffff;
-
-}
-/* Box contact */
+/* Formulaire de contact */
 .contact-form {
-    background-color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
-
 }
 
 .contact-form h5 {
+    font-size: 1.5rem;
     color: #070741;
-    margin-bottom: 20px;
-
+    margin-bottom: 1rem;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
     border: 1px solid #ddd;
-    border-radius: 25px;
-    font-size: 16px;
-    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
 }
 
 .contact-form textarea {
@@ -292,20 +228,16 @@ background-color: #ffffff;
 }
 
 .contact-form button {
-    background-color:#4F7335;
+    background-color: #4F7335;
     color: white;
     border: none;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 16px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
     background-color: #06401c;
-}
-
-.contact-form button svg {
-    margin-right: 5px;
 }
