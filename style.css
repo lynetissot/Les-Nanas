@@ -61,7 +61,7 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 .empty-space {
-    height: 50px;  /* Crée un espace de 50px */
+    height: 150px;  /* Crée un espace de 50px */
 }
 
 /* Titre principal */
